@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "602222818070",
+    "project_id": "closetpro98",
+    "storage_bucket": "closetpro98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602222818070:android:51382db7917079219a5637",
+        "android_client_info": {
+          "package_name": "com.lucilu.closetpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiSBAN94OzAwaQIuaaBRAsMntva98hLsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

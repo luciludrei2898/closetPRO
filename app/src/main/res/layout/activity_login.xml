@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_v_izq_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_v_drch_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_h_central_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeMainToRegistry"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_h_top_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_h_bottom_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_v_central_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <EditText
+        android:id="@+id/edit_txt_username_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/g_v_user_login"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/g_v_inicio_sesion_login" />
+
+    <TextView
+        android:id="@+id/txt_titulo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Inicia sesión"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/g_v_inicio_sesion_login"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <Button
+        android:id="@+id/b_GoToRegistro_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Logueo"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/g_h_boton_login"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/g_v_central_login"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/txt_titulo_secun_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="¿Aún no tienes cuenta?"
+        app:layout_constraintBottom_toTopOf="@+id/g_h_txt_secun_login"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/g_h_boton_login" />
+
+    <TextView
+        android:id="@+id/txt_nuevaCuenta_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:onClick="changeMainToRegistry"
+        android:text="Crear nueva cuenta."
+        app:layout_constraintBottom_toTopOf="@+id/g_h_txt_secun_crear_login"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/g_h_txt_secun_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_v_inicio_sesion_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24760602" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_v_user_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3652531" />
+
+    <EditText
+        android:id="@+id/edit_txt_password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/g_v_central_login"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/g_v_user_login" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_h_boton_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6169631" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_h_txt_secun_crear_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84678525" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_h_txt_secun_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.749658" />
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="94dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/g_v_drch_login"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/g_v_izq_login"
+        app:layout_constraintTop_toTopOf="@+id/g_h_top_login"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="114dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

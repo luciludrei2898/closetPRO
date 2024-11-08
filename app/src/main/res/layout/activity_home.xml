@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/txt_home_nuevos_seguidores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Descubre nuevas formas de vestir"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_sugerencias_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/g_txt_principal_home_drch"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_home"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_sugerencias_top"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_home_titulo"
+        android:layout_width="311dp"
+        android:layout_height="82dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Cada prenda cuenta, cada look importa."
+        android:textSize="75px"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_principal_home_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_home"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_home"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_principal_home_top"
+        app:layout_constraintVertical_bias="0.521"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_central_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_central_horizontal_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_izq_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_drch_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_top_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_bottom_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <TextView
+        android:id="@+id/txt_ver_mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Ver más"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_vermas_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_home"
+        app:layout_constraintStart_toStartOf="@+id/g_txt_principal_home_drch"
+        app:layout_constraintTop_toTopOf="@+id/g_central_horizontal_home" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82900137" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_principal_home_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14500684" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_principal_home_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_principal_home_drch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.71532845" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_vermas_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_sugerencias_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.625171" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_sugerencias_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_publicaciones_home"
+        android:layout_width="301dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/g_central_horizontal_home"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_home"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_home"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_principal_home_bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_followers_home"
+        android:layout_width="308dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_home"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_home"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_sugerencias_bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/logo_home"
+        android:layout_width="94dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_principal_home_top"
+        app:layout_constraintEnd_toStartOf="@+id/g_central_vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_home"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_top_home"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/b_armario_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="changeHomeToArmario"
+        android:text="Armario"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_home"
+        app:layout_constraintEnd_toStartOf="@+id/b_home_home"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_home"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/b_home_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="changeHomeToHome"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <Button
+        android:id="@+id/b_outfits_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="changeHomeToOutfits"
+        android:text="Outfits"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_home"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_home"
+        app:layout_constraintStart_toEndOf="@+id/b_home_home"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <ImageView
+        android:id="@+id/user_perfil_home"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:onClick="changeHomeToUser"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_principal_home_top"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_home"
+        app:layout_constraintStart_toStartOf="@+id/g_txt_principal_home_drch"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_top_home"
+        app:srcCompat="@drawable/usuario" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

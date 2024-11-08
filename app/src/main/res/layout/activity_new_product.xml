@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewProductActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_top_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_central_horizontal_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_bottom_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_drch_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_central_vertical_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_izq_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addToFireBase_DB"
+        android:text="Registrar producto"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_boton_subir_img" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir imágenes"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_boton_subir_img"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_precio_newp" />
+
+    <TextView
+        android:id="@+id/txt_titulo_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Nuevo producto"
+        android:textSize="60px"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_titulo_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_top_newp" />
+
+    <EditText
+        android:id="@+id/editxt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_nombre_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_titulo_newp" />
+
+    <EditText
+        android:id="@+id/editText_precio_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_precio_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_central_horizontal_newp" />
+
+    <EditText
+        android:id="@+id/editText_categoria_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Categoría"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_categoria_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_nombre_newp" />
+
+    <EditText
+        android:id="@+id/editText_color_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Color"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/g_txt_marca_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_categoria_newp" />
+
+    <EditText
+        android:id="@+id/editText_marca_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Marca"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/g_central_horizontal_newp"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_newp"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_newp"
+        app:layout_constraintTop_toTopOf="@+id/g_txt_marca_newp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_titulo_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13269494" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_nombre_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22298221" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_categoria_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_marca_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_precio_newp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61422706" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_txt_boton_subir_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArmarioActivity">
+
+    <ImageView
+        android:id="@+id/logo_home"
+        android:layout_width="94dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/g_logo_bottom_armario"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_central_armario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_armario"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_top_armario"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/b_ArmarioToOutfits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="changeArmarioToOutfits"
+        android:text="Outfits"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_armario"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_armario"
+        app:layout_constraintStart_toEndOf="@+id/b_ArmarioToHome"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_botones_armario_top" />
+
+    <Button
+        android:id="@+id/b_ArmarioToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="changeArmarioToHome"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_armario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_botones_armario_top" />
+
+    <Button
+        android:id="@+id/b_AmarioToArmario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:onClick="changeArmarioToArmario"
+        android:text="Armario"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_bottom_armario"
+        app:layout_constraintEnd_toStartOf="@+id/b_ArmarioToHome"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_armario"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_botones_armario_top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_izq_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_drch_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_top_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_central_horizontal_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_bottom_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical_central_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_horizontal_botones_armario_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_logo_bottom_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14637482" />
+
+    <TextView
+        android:id="@+id/txt_titulo_principal_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Armario"
+        android:textSize="75px"
+        app:layout_constraintBottom_toTopOf="@+id/g_text_titulo_armario"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_central_armario"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_armario"
+        app:layout_constraintTop_toTopOf="@+id/g_logo_bottom_armario"
+        app:layout_constraintVertical_bias="0.516"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_text_titulo_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <ScrollView
+        android:id="@+id/scroll_categorias_armario"
+        android:layout_width="295dp"
+        android:layout_height="321dp"
+        app:layout_constraintBottom_toTopOf="@+id/g_scroll_bottom_armario"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_armario"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_armario"
+        app:layout_constraintTop_toTopOf="@+id/g_text_titulo_armario">
+
+        <LinearLayout
+            android:id="@+id/scroll_categorias_armario_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_scroll_bottom_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72777015" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <ImageView
+        android:id="@+id/user_perfil_armario"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        android:onClick="changeArmarioToUser"
+        app:layout_constraintBottom_toTopOf="@+id/g_logo_bottom_armario"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_armario"
+        app:layout_constraintStart_toStartOf="@+id/g_user_armario"
+        app:layout_constraintTop_toTopOf="@+id/g_horizontal_top_armario"
+        app:srcCompat="@drawable/usuario" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_user_armario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <Button
+        android:id="@+id/b_add_new_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeArmarioToNewProducto"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/g_horizontal_botones_armario_top"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical_drch_armario"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical_izq_armario"
+        app:layout_constraintTop_toTopOf="@+id/g_scroll_bottom_armario" />
+</androidx.constraintlayout.widget.ConstraintLayout>
